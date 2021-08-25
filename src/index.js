@@ -4,12 +4,11 @@
     npm install -D nodemon
 */
 const express = require('express');
-const bodyParser = require('body-parser')
 const app = express();
 
 const port = 3001;
 
-const satelliteRouters = require('./app/routes/satellite');
+const satelliteRouters = require('./routes/satellite');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
