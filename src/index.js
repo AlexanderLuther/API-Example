@@ -2,6 +2,8 @@
     npm init
     npm install express --save
     npm install -D nodemon
+
+    docker build -t appName path
 */
 const express = require('express');
 const app = express();
